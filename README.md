@@ -1,6 +1,6 @@
-# Professinal social media site
+# Social Media Website
 
-## Inspired in Linkedin
+## Frontend of a Social media site inspired in linkedin
 
 ### Created with
 
@@ -10,4 +10,4 @@
 
 ### View site here:
 
-https://app.netlify.com/sites/professional-social-media-app/overview
+https://professional-social-media-app.netlify.app/
