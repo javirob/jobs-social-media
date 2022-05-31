@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from '../src/components/layout/Navbar';
+import { Home, Jobs, Messages, Network, Notifications, Error } from './pages';
+import CssBaseline from '@mui/material/CssBaseline';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <CssBaseline />
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/network' element={<Network />} />
+        <Route path='/jobs' element={<Jobs />} />
+        <Route path='/messages' element={<Messages />} />
+        <Route path='/notifications' element={<Notifications />} />
+        <Route path='*' element={<Error />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,12 @@
+.customSearch {
+  border: 2px solid transparent;
+  border-radius: 3px;
+  padding: 5px 10px;
+  outline: none;
+  background-color: rgb(233, 241, 249);
+}
+
+.customSearch:focus,
+.customSearch:hover {
+  border-color: #999;
+}
